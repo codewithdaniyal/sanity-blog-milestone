@@ -1,8 +1,11 @@
 {
-    "build": {
-      "env": {
-        "NPM_FLAGS": "--legacy-peer-deps"
-      }
+  "build": {
+    "env": {
+      "NPM_FLAGS": "--legacy-peer-deps"
+    },
+    "commands": {
+      "install": "npm install tailwindcss@latest",
+      "build": "npm install $NPM_FLAGS && npm install tailwindcss@latest && next build"
     }
   }
-  
+}
