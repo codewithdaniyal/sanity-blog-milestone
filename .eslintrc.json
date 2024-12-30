@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@next/next/no-img-element": "off", // Disable warning for <img> tag usage
+    "@typescript-eslint/no-explicit-any": "off", // Disable 'no-explicit-any' rule (optional for your case)
+    "no-console": "warn" // Example: Warn for console statements (optional)
+  }
 }
